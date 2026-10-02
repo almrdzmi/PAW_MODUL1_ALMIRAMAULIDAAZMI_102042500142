@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fbffe0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: #c0f2ff;
+    color: #3a3a3a;
+    margin: 0; 
+    padding: 20px 50px 60px 50px;
+    border-radius: 0; 
+    text-align: left;
+}
+
+.hero-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3a3a3a;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff4c4c;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin: 10px 0 20px 0;
+}
+
+.hero button {
+    background-color: #fbffe0;
+    color: #7a7172;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.katalog-container {
+    padding: 50px;
+}
+
+.katalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+.katalog-header h4 {
+    margin-bottom: 8px; 
+    color: #555;
+}
+
+.Total-produk {
+    font-weight: bold;
+}
+
+.Produk-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.Produk-card {
+    background-color: #c0f2ff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Kategori-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #718096;
+    margin-bottom: 10px; 
+}
+
+.nama-produk {
+    font-size: 20px;
+    margin-bottom: 10px; 
+}
+
+.harga {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.status-tersedia { 
+    color: #38a169; 
+    font-weight: bold; 
+    font-size: 14px; 
+}
+
+.status-habis { 
+    color: #e53e3e; 
+    font-weight: bold; 
+    font-size: 14px; 
+}
+
+.button-beli {
+    background-color: #d2fff8;
+    color: #3a3a3a;
+    border: 1px solid #d2fff8;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-beli:disabled {
+    background-color: #cbd5e0;
+    border: none;
+    cursor: not-allowed;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d4f6ff;
+    color: #3e3b3b;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .Produk-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+    .Produk-grid { grid-template-columns: 1fr; }
+    .hero, .katalog-container { padding: 30px 20px; }
+    .katalog-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
